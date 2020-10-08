@@ -23,3 +23,9 @@ cacheinverse <- function(x, ...) {
         x$setinverse(m)
         m
 }
+#TEST
+#randommatrix <- makematrix(matrix(1:4,nrow=2,ncol=2))
+#randommatrix$get()
+
+#randommatrix$getinverse()
+#cacheinverse(randommatrix)
