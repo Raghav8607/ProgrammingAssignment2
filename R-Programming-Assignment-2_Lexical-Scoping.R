@@ -1,3 +1,7 @@
+#comments provide explanation to the code
+#Below two functions are used to create an object that stores a matrix and caches its inverse
+
+#Below function does, set and get of a matrix
 makematrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -12,6 +16,8 @@ makematrix <- function(x = matrix()) {
              getinverse = getinverse)
 }
 
+#Below function checks first if the inverse has been created. 
+#If not it will create the inverse
 cacheinverse <- function(x, ...) {
         m <- x$getinverse()
         if(!is.null(m)) {
